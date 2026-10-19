@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #222;
+            color: white;
+            text-align: center;
+            margin: 0;
+        }
+
+        nav {
+            background: black;
+            padding: 15px;
+        }
+
+        nav a {
+            color: red;
+            margin: 5px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        section {
+            padding: 30px 15px;
+        }
+
+        h2 {
+            color: red;
+        }
+
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .profile {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 4px solid red;
+            object-fit: cover;
+            background: #333;
+        }
+
+        .choose-profile {
+            margin-top: 12px;
+            background: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .choose-profile:hover {
+            background: darkred;
+        }
+
+        #photoInput {
+            display: none;
+        }
+
+        .card {
+            background: #333;
+            padding: 15px;
+            margin: 10px auto;
+            border-radius: 10px;
+            max-width: 400px;
+        }
+
+        .card img {
+            width: 100%;
+            max-width: 300px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .tagline {
+            color: red;
+            font-style: italic;
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        footer {
+            background: black;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#goals">Goals</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+
+    <div class="profile-container">
+        <img id="profilePreview"
+             src="1792377775245.jpeg"
+             class="profile"
+             alt="Profile Picture">
+
+        <label for="photoInput" class="choose-profile">
+            Choose Profile
+        </label>
+
+        <input type="file"
+               id="photoInput"
+               accept="image/*">
+    </div>
+
+    <h1>GINO SIMBAJON</h1>
+    <p>ACT Student - ACT2C</p>
+
+    <h3>Short Introduction</h3>
+    <p>
+        Hello! I am Gino Simbajon, an ACT student
+        who is interested in technology, gaming,
+        and programming.
+    </p>
+
+    <h3>Personal Tagline</h3>
+    <p class="tagline">Think Code Create</p>
+
+</section>
+
+<section id="about">
+
+    <h2>About Me</h2>
+
+    <div class="card">
+        <h3>Short Bio</h3>
+
+        <p>
+            I am a student at Datamex College taking
+            Associate in Computer Technology.
+            I enjoy playing games, learning coding,
+            and exploring new technologies.
+            My goal is to improve my skills and
+            become an IT professional.
+        </p>
+
+        <p>Name: GINO SIMBAJON</p>
+        <p>Course: ACT2C</p>
+        <p>School: Datamex College</p>
+        <p>Hobbies: Gaming and Coding</p>
+        <p>Interests: Technology and Programming</p>
+    </div>
+
+</section>
+
+<section id="skills">
+
+    <h2>My Skills</h2>
+
+    <div class="card">HTML</div>
+    <div class="card">CSS</div>
+    <div class="card">Basic Python</div>
+    <div class="card">Computer Skills</div>
+    <div class="card">Problem Solving</div>
+
+</section>
+
+<section id="projects">
+
+    <h2>My Projects</h2>
+
+    <div class="card">
+        <img src="project1.jpg" alt="Clinic Management System">
+        <h3>Clinic Management System</h3>
+        <p>A simple system for managing patient records.</p>
+        <p>Technology: Python</p>
+    </div>
+
+    <div class="card">
+        <img src="project2.jpg" alt="Personal Portfolio">
+        <h3>Personal Portfolio Website</h3>
+        <p>A website that introduces myself.</p>
+        <p>Technology: HTML and CSS</p>
+    </div>
+
+    <div class="card">
+        <img src="project3.jpg" alt="Simple Web Design">
+        <h3>Simple Web Design</h3>
+        <p>A basic webpage design project.</p>
+        <p>Technology: HTML and CSS</p>
+    </div>
+
+</section>
+
+<section id="achievements">
+
+    <h2>My Achievements</h2>
+
+    <div class="card">
+        <h3>1st Place in MLBB Tournament</h3>
+        <p>
+            Achieved first place in a Mobile Legends:
+            Bang Bang tournament.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Academic Achievement - SHS</h3>
+        <p>
+            Recognized for my academic achievement
+            during Senior High School.
+        </p>
+    </div>
+
+</section>
+
+<section id="goals">
+
+    <h2>My Future Goals</h2>
+
+    <div class="card">
+        <p>Improve my coding skills.</p>
+        <p>Learn more programming languages.</p>
+        <p>Create more projects.</p>
+        <p>Finish my studies.</p>
+        <p>Become an IT professional.</p>
+    </div>
+
+</section>
+
+<section id="contact">
+
+    <h2>Contact Me</h2>
+
+    <div class="card">
+        <p>Email: ginosimbajon@gmail.com</p>
+
+        <p>
+            <a href="https://www.facebook.com/"
+               target="_blank"
+               rel="noopener noreferrer">
+                My Facebook
+            </a>
+        </p>
+
+        <p>
+            <a href="https://www.instagram.com/"
+               target="_blank"
+               rel="noopener noreferrer">
+                My Instagram
+            </a>
+        </p>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 GINO SIMBAJON</p>
+    <p>Personal Portfolio Website</p>
+</footer>
+
+<script>
+    const photoInput = document.getElementById("photoInput");
+    const profilePreview = document.getElementById("profilePreview");
+
+    photoInput.addEventListener("change", function() {
+        const file = this.files[0];
+
+        if (file && file.type.startsWith("image/")) {
+            const imageURL = URL.createObjectURL(file);
+            profilePreview.src = imageURL;
+        }
+    });
+</script>
+
+</body>
+</html>
